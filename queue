@@ -1,0 +1,26 @@
+def enqueue():
+    n=int(input("enter a number"))
+    stack.append(n)
+
+def dequeue():
+    if len(stack) != 0:
+        stack.pop(0)
+def display():
+    print(stack)
+
+
+
+stack=[]
+while True:
+    print("select below options 1,2,3")
+    str=input("1.enqueue \n 2.dequeue \n 3.display \n")
+    if str == "1":
+        print("enqueue")
+        enqueue()
+    elif str=="2":
+        print("dequeue")
+        dequeue()
+    elif str == "3":
+        display()
+    else:
+        break

@@ -1,0 +1,28 @@
+def push():
+    n=int(input("enter a number"))
+    if len(stack) == 0:
+        stack.append(n)
+    else:
+        stack.insert(0,n)
+def pop():
+    if len(stack) != 0:
+        stack.pop(0)
+def display():
+    print(stack)
+
+
+
+stack=[]
+while True:
+    print("select below options 1,2,3")
+    str=input("1.push \n 2. pop \n 3.display \n")
+    if str == "1":
+        print("Push")
+        push()
+    elif str=="2":
+        print("pop")
+        pop()
+    elif str == "3":
+        display()
+    else:
+        break
